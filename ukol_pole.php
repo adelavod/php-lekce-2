@@ -3,7 +3,7 @@ $titulek = 'Uživatelský profil';
 $pole = ['jméno' => 'Adéla', 'příjmení' => 'Vodvářková'];
 $pole = ['věk' => '24'];
 
-$jmeno = "Adélka";
+$jmeno = "Adéla";
 $poradi = 5;
 
 $cislo = 10;
@@ -11,7 +11,7 @@ $negcislo = -2;
 $descislo = 0.1;
 
 ?>
-/Users/AdelaVodvarkova/PhpstormProjects/php-lekce-2/ukol_pole.php
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -68,21 +68,61 @@ $descislo = 0.1;
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1>
+        <h2>
             <?php
+
             echo $titulek;
 
             ?>
-        </h1>
-        <table class="table">
+        </h2>
+<?php
+// array (pole) je seznam prvků. prvky pole se zapisují do [...]
+?>
+
+        <table class="table table-striped table-dark table-hover">
             <tbody>
             <tr>
                 <th>Jméno:</th>
-                <td> <?php echo $profil['jmeno']; ?> </td>
+                <td> <?php
+                    $profil = ['jmeno'=> 'Adéla', 'prijmeni'=> 'Vodvářková'];
+
+                    echo $profil['jmeno'];
+                    ?> </td>
+            </tr>
+            <tr>
+                <th>Příjmení:</th>
+                <td> <?php
+                    echo $profil['prijmeni'];
+                ?> </td>
+            </tr>
+            <tr>
+                <th>Věk:</th>
+                <td>
+                <?php
+                $profil['vek']='24';
+                echo $profil['vek'];
+                ?> </td>
+            </tr>
+            <tr>
+                <th>Oblíbená barva:</th>
+                <td>
+                <?php
+                $profil['barva']=['nazev'=>'žlutá', 'kod'=> '#ffd700'];
+                echo $profil['barva']['nazev'];
+                ?> </td>
+            </tr>
+            <tr>
+                <th>Koníčky:</th>
+                <td> <?php
+                $profil['konicky']=['PHP','PS4', 'PRÁVO','fighting patriarchy'];
+                $profil['konicky'][]='memes';
+                print_r($profil['konicky']);
+
+                ?> </td>
             </tr>
             </tbody>
         </table>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <p class="lead">text.<br>text.</p>
     </div>
 
 <?php
@@ -125,12 +165,21 @@ $castkabezDPH = 2000;
 $DPH = 21;
 $castkasDPH = $castkabezDPH + ($castkabezDPH/100)*21;
 echo "<br>";
-echo "Částka $castkabezDPH s DPH je $castkasDPH"
+echo "Částka $castkabezDPH s DPH je $castkasDPH";
+echo "What is happening" ;
+echo "<br>";
 
 
 ?>
 
+<hr>
+
 </main><!-- /.container -->
+
+<footer class="container-fluid">
+        <p>Vyrobeno v únoru </p>
+</footer>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
