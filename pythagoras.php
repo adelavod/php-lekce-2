@@ -5,12 +5,13 @@
  * Date: 2019-02-25
  * Time: 16:27
  */
+
 $a = '4';
 $b = '5';
 $obdelnikobsah = $a * $b
     ?>
-
-<h1>Obsah obdélníku o stranách <?php echo $a ?> cm a <?php echo $b ?> cm je <?php echo $obdelnikobsah ?> cm2.</h1>
+<h1>Geometrické výpočty</h1>
+<h2>Obsah obdélníku o stranách <?php echo $a ?> cm a <?php echo $b ?> cm je <?php echo $obdelnikobsah ?> cm2.</h2>
 
 <?php
 //echo "první způsob:";
@@ -20,7 +21,7 @@ $d = sqrt(3);
 $trojuhelnikobsah1 = ($c*$c*$d)/4;
 ?>
 
-<h1>Obsah rovnoramenného trojúhelníku o stranách <?php echo $c?> cm je <?php echo $trojuhelnikobsah1?> cm.</h1>
+<h2>Obsah rovnoramenného trojúhelníku o stranách <?php echo $c?> cm je <?php echo $trojuhelnikobsah1?> cm.</h2>
 
 
 
@@ -35,7 +36,8 @@ $vyska = sin($uhelvrad)*$strana;
 
 $trojuhelnikobsah = ($strana*$vyska)/2;
 $roundtrojuhelnikobsah = round($trojuhelnikobsah,2);
-echo "Při výpočtu druhým způsobem dojdeme při zaokrouhlení k hodnotě $roundtrojuhelnikobsah .";
 ?>
+<h2>Při výpočtu druhým způsobem dojdeme při zaokrouhlení k hodnotě <?php echo $roundtrojuhelnikobsah ?> cm.</h2>
+
 
 
