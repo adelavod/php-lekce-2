@@ -10,10 +10,10 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+      <link href="starter-template.css" rel="stylesheet">
   </head>
 
   <body>
@@ -35,16 +35,29 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
+
     </nav>
+    <div class="row" id="box-search">
+        <div class="img-thumbnail text-center">
+            <img src="js/photos/editedbirds%201.jpg" class="mx-auto d-block" alt="Responsive image" style="width: 100%">
+<div class="carousel-caption">
+    <p>LOREM IPSUM</p>
+</div>
 
-    <main role="main" class="container">
+        </div>
+    </div>
 
-      <div class="starter-template">
+
+    <hr>
+    <main role="main" class="jumbotron">
+
+      <div class="jumbotron-fluid">
         <h1>
 <?php
   echo 'Centrální obrazovka všehomíra';
 
 ?>
+
         </h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
